@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Disha Jewels – Gold • Silver • Diamond Jewellery, Surat</title>
+<meta name="description" content="Disha Jewels, Surat – gold, silver and diamond jewellery since 2006.">
+<link rel="icon" href="logo.png">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5eddf;--card:#fbf6ec;--ink:#3a1f19;--mute:#7d5d52;--brand:#9a4333;--line:#e4d5be;--soft:#efe3cf;--on:#fff}
+@media(prefers-color-scheme:dark){:root{--bg:#241512;--card:#2e1c17;--ink:#f3e8d6;--mute:#c4a99b;--brand:#d4826e;--line:#4a2f27;--soft:#33211c;--on:#2a1510}}
+*,*::before,*::after{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-padding-top:64px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 Jost,system-ui,-apple-system,Segoe UI,sans-serif}
+body.lock{overflow:hidden}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;margin:0;line-height:1.15}
+a{color:inherit}
+button,a{touch-action:manipulation}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font:700 22px "Cormorant Garamond",Georgia,serif;color:var(--brand)}
+.brand img{width:38px;height:38px;border-radius:50%}
+nav{display:flex;gap:18px;font-size:15px}
+nav a{text-decoration:none;color:var(--mute)}nav a:hover{color:var(--brand)}
+@media(max-width:640px){nav a.hide{display:none}}
+.btn{display:inline-flex;align-items:center;justify-content:center;border:1.5px solid var(--brand);background:var(--brand);color:var(--on);padding:12px 22px;border-radius:999px;font:500 15px Jost,sans-serif;text-decoration:none;cursor:pointer;transition:transform .1s}
+.btn.ghost{background:transparent;color:var(--brand)}
+.btn.wa{background:#1f8f4e;border-color:#1f8f4e;color:#fff}
+.btn:active,.card:active,.dept:active,.tab:active{transform:scale(.97)}
+.hero{text-align:center;padding:48px 0 56px;background:radial-gradient(circle at 50% 0,var(--soft),transparent 70%)}
+.logo{width:min(190px,48vw);border-radius:50%;box-shadow:0 10px 34px rgba(122,51,38,.22)}
+.hero h1{font-size:clamp(40px,9vw,68px);color:var(--brand);margin-top:22px}
+.kinds{font:600 clamp(18px,4.4vw,26px) "Cormorant Garamond",Georgia,serif;margin:10px 0 6px}
+.kinds i{color:var(--brand);font-style:normal;padding:0 6px}
+.since{display:inline-block;margin:8px 0 26px;padding:6px 16px;border:1px solid var(--line);border-radius:999px;color:var(--mute);font-size:14px;background:var(--card)}
+.cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+section{padding:54px 0}
+.eyebrow{color:var(--brand);font-size:13px;letter-spacing:2.5px;text-transform:uppercase;text-align:center}
+h2{font-size:clamp(30px,6vw,42px);text-align:center;margin:6px 0 10px}
+.sub{text-align:center;color:var(--mute);max-width:560px;margin:0 auto 30px}
+.depts{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.dept{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px 22px;text-align:left;cursor:pointer;color:inherit;font:inherit;transition:transform .1s}
+.dept:hover,.card:hover{border-color:var(--brand)}
+.dept h3{font-size:28px;color:var(--brand)}.dept p{margin:8px 0 0;color:var(--mute);font-size:15px}
+.dept span{display:block;margin-top:12px;color:var(--brand);font-size:14px}
+#coll{background:var(--soft)}
+.tabs{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:22px}
+.tab{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:9px 18px;border-radius:999px;font:500 15px Jost,sans-serif;cursor:pointer;transition:transform .1s}
+.tab.on{background:var(--brand);color:var(--on);border-color:var(--brand)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px}
+@media(max-width:480px){.grid{grid-template-columns:repeat(2,1fr);gap:12px}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;padding:0;text-align:left;cursor:pointer;color:inherit;font:inherit;transition:transform .1s}
+.ph{aspect-ratio:1;background:linear-gradient(135deg,var(--soft),var(--line));display:grid;place-items:center;font:700 54px "Cormorant Garamond",serif;color:var(--brand)}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.cb{padding:12px 14px 16px}.cb h3{font-size:20px;margin:4px 0}.cb p{margin:0;color:var(--mute);font-size:14px}
+.tag{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--brand)}
+.empty{grid-column:1/-1;text-align:center;color:var(--mute);padding:34px 10px;border:1px dashed var(--line);border-radius:16px}
+.visit{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.box{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px}
+.box h3{font-size:26px;color:var(--brand);margin-bottom:8px}.box p{margin:4px 0 16px}
+footer{border-top:1px solid var(--line);padding:26px 0 34px;text-align:center;color:var(--mute);font-size:14px}
+#modal{position:fixed;inset:0;z-index:50;background:rgba(30,12,8,.6);display:flex;align-items:flex-end;justify-content:center}
+#modal[hidden]{display:none}
+.sheet{background:var(--bg);width:100%;max-width:560px;max-height:92vh;overflow:auto;border-radius:22px 22px 0 0;padding:20px 20px 24px;animation:up .16s ease-out}
+@keyframes up{from{transform:translateY(24px);opacity:.4}to{transform:none;opacity:1}}
+@media(min-width:700px){#modal{align-items:center}.sheet{border-radius:22px}}
+.x{float:right;border:0;background:var(--soft);color:var(--ink);width:36px;height:36px;border-radius:50%;font-size:20px;cursor:pointer}
+.big{border-radius:16px;overflow:hidden;margin:6px 0 14px;max-height:48vh;aspect-ratio:1;width:100%}
+.big .ph{height:100%}
+.sheet h2{text-align:left;font-size:30px;margin:2px 0 10px}
+dl{display:grid;grid-template-columns:auto 1fr;gap:8px 16px;margin:0 0 16px}dt{color:var(--mute)}dd{margin:0;font-weight:500}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="brand" href="#top"><img src="logo.png" alt="Disha Jewels logo">Disha Jewels</a>
+  <nav><a class="hide" href="#depts">Departments</a><a href="#coll">Collection</a><a class="hide" href="#about">About</a><a href="#visit">Visit</a></nav>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+  <img class="logo" src="logo.png" alt="Disha Jewels logo">
+  <h1>Disha Jewels</h1>
+  <div class="kinds">Gold<i>•</i>Silver<i>•</i>Diamond Jewellery</div>
+  <div class="since">Since 2006 · Surat, Gujarat</div>
+  <div class="cta"><a class="btn" href="#coll">Explore Collection</a><a class="btn ghost" href="#visit">Visit Our Showroom</a></div>
+</div></div>
+
+<section id="depts"><div class="wrap">
+  <div class="eyebrow">Our Departments</div><h2>Find Your Perfect Piece</h2>
+  <p class="sub">Four departments, each with designs picked for every occasion.</p>
+  <div class="depts" id="dtiles"></div>
+</div></section>
+
+<section id="coll"><div class="wrap">
+  <div class="eyebrow">The Collection</div><h2>Our Latest Designs</h2>
+  <p class="sub">Tap any design to see its details and enquire on WhatsApp.</p>
+  <div class="tabs" id="tabs"></div>
+  <div class="grid" id="grid"></div>
+</div></section>
+
+<section id="about"><div class="wrap">
+  <div class="eyebrow">About Us</div><h2>Trusted in Surat Since 2006</h2>
+  <p class="sub">For close to two decades, Disha Jewels has been helping families in Surat choose jewellery for weddings, festivals and everyday moments – in gold, silver and diamond.</p>
+</div></section>
+
+<section id="visit" style="background:var(--soft)"><div class="wrap">
+  <div class="eyebrow">Visit Us</div><h2>Come See It in Person</h2>
+  <div class="visit">
+    <div class="box"><h3>Disha Jewels Showroom</h3>
+      <p>Sai Shraddha, Bhakti Nandan Sector,<br>Mota Varachha, Surat,<br>Gujarat 394101</p>
+      <a class="btn" href="https://share.google/QgCQMC6wPSA7JcpHf" target="_blank" rel="noopener">Get Directions</a></div>
+    <div class="box"><h3>Follow Our Designs</h3>
+      <p>See new arrivals and showroom updates on Instagram.</p>
+      <a class="btn ghost" href="https://instagram.com/disha.jewels_retail?obrf=ZHh1dnlla2dsZWM4&amp;utm_source=qr" target="_blank" rel="noopener">@disha.jewels_retail</a></div>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">© Disha Jewels, Surat · Gold • Silver • Diamond Jewellery · Since 2006</div></footer>
+<div id="modal" hidden></div>
+
+<script>
+/* ====== EDIT HERE ====== */
+const WA = "917069074000";   // shop WhatsApp number with country code (91)
+
+// One line per design. dept: gold | silver | antique | heritage
+// img: photo file inside an "images" folder, e.g. "images/l-ring.jpg" (leave "" for none)
+const DESIGNS = [
+  { dept:"gold", title:"L ring", weight:"2.50", metal:"18k", details:"", img:"" },
+  // { dept:"silver", title:"Silver anklet", weight:"30 g", metal:"Silver 925", details:"Pair, with bells", img:"images/anklet.jpg" },
+];
+/* ======================== */
+
+const DEPTS=[['gold','Gold','Timeless gold jewellery for every occasion.'],['silver','Silver','Graceful silver pieces and gifts.'],['antique','Antique','Antique-finish designs with old-world charm.'],['heritage','Heritage','Traditional designs, loved across generations.']];
+const DN=Object.fromEntries(DEPTS.map(d=>[d[0],d[1]]));
+const $=s=>document.querySelector(s);
+const E=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let cur='all';
+
+function drawTiles(){
+  $('#dtiles').innerHTML=DEPTS.map(d=>`<button class="dept" data-dept="${d[0]}"><h3>${d[1]}</h3><p>${d[2]}</p><span>View designs →</span></button>`).join('');
+}
+function drawTabs(){
+  $('#tabs').innerHTML=[['all','All']].concat(DEPTS.map(d=>[d[0],d[1]])).map(t=>`<button class="tab${t[0]===cur?' on':''}" data-tab="${t[0]}">${t[1]}</button>`).join('');
+}
+function pic(it){return it.img?`<img src="${E(it.img)}" alt="${E(it.title)}" loading="lazy" decoding="async">`:E((it.title||'D')[0].toUpperCase());}
+function drawGrid(){
+  const list=DESIGNS.map((it,i)=>[it,i]).filter(x=>cur==='all'||x[0].dept===cur);
+  $('#grid').innerHTML=list.length?list.map(([it,i])=>`<button class="card" data-open="${i}"><div class="ph">${pic(it)}</div><div class="cb"><span class="tag">${E(DN[it.dept]||'')}</span><h3>${E(it.title)}</h3><p>${E([it.weight,it.metal].filter(Boolean).join(' · '))}</p></div></button>`).join(''):`<div class="empty">New designs are being added to this department.<br>Follow us on Instagram or visit the showroom to see the latest collection.</div>`;
+}
+function waLink(it){
+  const t=`Hello Disha Jewels, I’m interested in this design:\n${it.title} (${DN[it.dept]})`+(it.weight?`\nWeight: ${it.weight}`:'')+(it.metal?`\nMetal: ${it.metal}`:'')+`\nPlease share more details.`;
+  return `https://wa.me/${WA}?text=${encodeURIComponent(t)}`;
+}
+function openItem(i){
+  const it=DESIGNS[i];if(!it)return;
+  const rows=[['Department',DN[it.dept]],['Weight',it.weight],['Metal / purity',it.metal],['Details',it.details]].filter(r=>r[1]);
+  $('#modal').innerHTML=`<div class="sheet"><button class="x" data-close aria-label="Close">×</button><div class="big"><div class="ph">${pic(it)}</div></div><h2>${E(it.title)}</h2><dl>${rows.map(r=>`<dt>${r[0]}</dt><dd>${E(r[1])}</dd>`).join('')}</dl><a class="btn wa" style="width:100%" href="${waLink(it)}" target="_blank" rel="noopener">Enquire on WhatsApp</a></div>`;
+  $('#modal').hidden=false;document.body.classList.add('lock');
+}
+function closeModal(){$('#modal').hidden=true;$('#modal').innerHTML='';document.body.classList.remove('lock');}
+
+document.addEventListener('click',e=>{
+  if(e.target.id==='modal')return closeModal();
+  const t=e.target.closest('[data-tab],[data-dept],[data-open],[data-close]');
+  if(!t)return;
+  if(t.dataset.tab){cur=t.dataset.tab;drawTabs();drawGrid();}
+  else if(t.dataset.dept){cur=t.dataset.dept;drawTabs();drawGrid();$('#coll').scrollIntoView();}
+  else if(t.dataset.open!==undefined)openItem(+t.dataset.open);
+  else closeModal();
+});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
+drawTiles();drawTabs();drawGrid();
+</script>
+</body>
+</html>
